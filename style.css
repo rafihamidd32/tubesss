@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to right,
+    #ff9a9e,
+    #fecfef,
+    #fecf9e
+  ); /* Background gradient */
+  color: #333;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Ensures navbar stays above hero section */
+}
+
+.navbar {
+  display: flex;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #606060;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar a.active {
+  color: #ff6384;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-screen height */
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  margin-top: 80px; /* To avoid overlapping with the navbar */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Space between text and image */
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.intro .badge {
+  display: inline-block;
+  background-color: #ffe4ed;
+  color: #ff6384;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.image-content {
+  position: relative;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular profile image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.wave-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  transform: rotate(-10deg);
+}
