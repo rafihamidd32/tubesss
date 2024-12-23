@@ -3,125 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar, Hero & My Work</title>
+    <title>Portofolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navbar Section -->
-    <div class="navbar-container">
-      <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#journey" class="active">Journey</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#class">Class</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-
-    <!-- Hero Section -->
-    <header class="hero">
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Hero Section-->
+    <section id="home" class="hero">
       <div class="hero-content">
-        <div class="text-content">
-          <div class="intro">
-            <span class="badge">Meet Mareta 👋</span>
-          </div>
-          <h1>Design, Develop, Inspire</h1>
-          <p>
-            Breathing life into designs, transforming magic into code, and
-            making a positive impact. ✨
-          </p>
-        </div>
-        <div class="image-content">
-          <img
-            src="profile.jpg"
-            alt="Profile of Mareta"
-            class="profile-picture"
-          />
-          <div class="wave-icon">👋</div>
-        </div>
+        <div class="greeting">Welcome! 👋</div>
+        <h1>Design, Code, Create</h1>
+        <p>
+          Turning creative ideas into elegant solutions, crafting beautiful
+          experiences, and making technology more human. ✨
+        </p>
       </div>
-    </header>
-    <!--Journey section-->
-    <section class="journey">
-      <div class="journey-content">
-        <div class="journey-image">
-          <img src="path-to-your-image.jpg" alt="Journey Image" />
-          <div class="tags">
-            <span class="tag yellow">Frontend Engineer</span>
-            <span class="tag purple">UI/UX Designer</span>
-            <span class="tag orange">Developer Advocate</span>
-          </div>
-        </div>
-        <div class="journey-text">
-          <h2>My Exciting Journey 🤓</h2>
-          <p>
-            Fueled by an insatiable curiosity and a love for learning, my
-            journey started with building landing pages using HTML, CSS & JS,
-            followed by crafting user experiences in <b>UI/UX Design</b>.
-          </p>
-          <p>
-            Now, I thrive as a <b>Software Engineer</b> specializing in frontend
-            development. Alongside, I share my expertise and experiences as a
-            <b>Tech Content Creator</b>.
-          </p>
-          <div class="stats">
-            <div class="stat">
-              <h3>28K+</h3>
-              <p>TikTok</p>
-            </div>
-            <div class="stat">
-              <h3>15K+</h3>
-              <p>Instagram</p>
-            </div>
-          </div>
-        </div>
+      <div class="profile-image">
+        <img
+          src="i1.png"
+          alt="Profile"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+    </section>
+    <!--Journey Section-->
+    <section id="journey" class="journey">
+      <div class="journey-image">
+        <img src="i2.png" alt="Journey Image" />
+      </div>
+      <div class="journey-text">
+        <h2>My Journey</h2>
+        <p>
+          Hello! I am <strong>Muhammad Rafi Fathurrahman Hamid</strong>, a
+          student of <strong>Informatics Engineering</strong> at Pasundan
+          University. Currently, I am studying and exploring the world of
+          technology.
+        </p>
+        <p>
+          This portfolio website contains unique stories and facts about me. so,
+          welcome! ✨
+        </p>
       </div>
     </section>
 
-    <!-- My Work Section -->
-    <section class="my-work">
-      <h2>My Work</h2>
-      <div class="work-cards">
-        <!-- Work Card 1 -->
-        <div class="work-card">
-          <div class="work-image" style="background-color: #e3dafa">
-            <img src="ui-ux.png" alt="UI/UX Illustration" />
+    <!--Skills Section-->
+    <section id="skills" class="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-image">
+            <img src="id.png" alt="Drawing Skill" />
           </div>
-          <h3>UI/UX</h3>
+          <h3>Drawing</h3>
           <p>
-            Transforming ideas into visually stunning interfaces. Elevating user
-            experiences through intuitive designs that captivate.
+            Creating beautiful artworks and illustrations with attention to
+            detail and creativity.
           </p>
-          <button class="view-more">View more</button>
         </div>
-        <!-- Work Card 2 -->
-        <div class="work-card">
-          <div class="work-image" style="background-color: #d1f8d8">
-            <img src="frontend.png" alt="Frontend Illustration" />
+        <div class="skill-card">
+          <div class="skill-image">
+            <img src="ie.png" alt="Editing Skill" />
           </div>
-          <h3>Frontend</h3>
+          <h3>Editing</h3>
           <p>
-            Crafting smooth, responsive web experiences and adherence to best
-            practices for search visibility.
+            Crafting engaging visual content through professional photo and
+            video editing.
           </p>
-          <button class="view-more">View more</button>
         </div>
-        <!-- Work Card 3 -->
-        <div class="work-card">
-          <div class="work-image" style="background-color: #fef4d1">
-            <img
-              src="content-creation.png"
-              alt="Content Creation Illustration"
-            />
+        <div class="skill-card">
+          <div class="skill-image">
+            <img src="ip.png" alt="Programming Skill" />
           </div>
-          <h3>Content Creation</h3>
+          <h3>Programming</h3>
           <p>
-            Demystifying tech through engaging storytelling. Creating content
-            that educates and inspires.
+            Building efficient and elegant solutions through code and
+            problem-solving.
           </p>
-          <button class="view-more">View more</button>
         </div>
       </div>
     </section>
+    <!--Scripts-->
+    <script src="script.js"></script>
   </body>
 </html>
